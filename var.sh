@@ -1,8 +1,8 @@
 #!/bin/bash 
-PERSON1=sun
-PERSON2=wind
-PERSON3=$trees
-
+PERSON1=$1
+PERSON2=$2
+PERSON3=$3
+ 
 
 
 
