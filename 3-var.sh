@@ -1,10 +1,10 @@
-#!/bin/bash
-
+#!/bin/bash 
 PERSON1=$1
 PERSON2=$2
-PERSON=$3
+PERSON3=$3  # Remove the incorrect $trees reference
 
-echo "The PERSON1 rises, the PERSON1 sets. The PERSON2 whispers, the PERSON3s dance.
+echo "The $PERSON1 rises, the $PERSON1 sets. The $PERSON2 whispers, the $PERSON3 dance."
+
 The PERSON1 rises, the PERSON1 sets. The PERSON2 whispers, the PERSON3s dance.
 The PERSON1 rises, the PERSON1 sets. The PERSON2 whispers, the PERSON3s dance.
 The PERSON1 rises, the PERSON1 sets. The PERSON2 whispers, the PERSON3s dance.
