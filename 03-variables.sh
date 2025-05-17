@@ -1,18 +1,28 @@
 #!/bin/bash
 
-USERID=$(id -u)  # Removed space after '='
+USERID=$(id -u)
 
-if [ "$USERID" -ne 0 ]; then  # Fixed condition brackets and added missing value
+if [ "$USERID" -ne 0 ]; then
     echo "Error: Please run this script as root"
-    exit 1  # Exit to prevent unintended execution
+    exit 1
 else
     echo "You are running this script as root"
 fi
 
-dnf install nginx -y  # Ensures this runs only if the user is root
- if [ $? -eq 0 ]; then
+# Install Nginx
+dnf install nginx -y
+if [ $? -eq 0 ]; then
     echo "Nginx installed successfully"
 else
     echo "Failed to install Nginx"
     exit 1
+fi
+
+# Install MySQL
+dnf install mysql -y
+if [ $? -ne 0 ]; then
+    echo "Failed to install MySQL"
+    exit 1
+else
+    echo "MySQL installed successfully"
 fi
