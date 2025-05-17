@@ -10,3 +10,9 @@ else
 fi
 
 dnf install nginx -y  # Ensures this runs only if the user is root
+ if [ $? -eq 0 ]; then
+    echo "Nginx installed successfully"
+else
+    echo "Failed to install Nginx"
+    exit 1
+fi
