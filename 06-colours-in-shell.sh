@@ -1,2 +1,13 @@
 #!/bin/bash
 echo -e "\e[31mHello World!"
+echo -e "\e[32mHI World!"
+echo -e "\e[33mHey  World!"
+echo -e "\e[34mHello World!"
+echo -e "\e[35mHello World!"
+echo -e "\e[36mHello World!"            
+echo -e "\e[37mHello World!"
+echo -e "\e[0mHello World!"
+echo -e "\e[1;31mHello World!"
+echo -e "\e[1;32mHello World!"
+echo -e "\e[1;33mHello World!"
+echo -e "\e[1;34mHello World!"
